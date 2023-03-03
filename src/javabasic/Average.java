@@ -9,7 +9,7 @@ public class Average {
         int b = 17;
         double sum = 0;
         double sum1 = 0;
-        for(;a - b <= 0;)
+        for(;a <= b;)
         {
             i++;
             if (a % 2 == 0) { sum1 += a; j += 1; }
