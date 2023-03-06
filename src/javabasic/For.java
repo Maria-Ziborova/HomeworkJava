@@ -2,7 +2,7 @@ package javabasic;
 
 import static Homework.For.multipleFour;
 
-public class ForNew {
+public class For {
     public static boolean multipleFour(int x) {
         if (x % 4 == 0) {
             return true;
