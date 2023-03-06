@@ -2,7 +2,7 @@ package javabasic;
 
 import java.util.Scanner;
 
-public class Avg {
+public class Average {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите начало диапазона: ");
