@@ -7,11 +7,9 @@ public class For {
         if (x % 4 == 0) {
             return true;
         }
-        else {
-            return false;
-        }
+        return false;
     }
-
+    
     public static void main(String[] args) {
 
         for (int i = 100; i >= 1; i--) {
