@@ -5,20 +5,20 @@ import java.util.Scanner;
 public class Digits {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int a = scanner.nextInt();
+        int inputDigit = scanner.nextInt();
         int sum = 0;
         int sumOdd = 0;
         int max = 0;
-        while (a != 0) {
-            sum += (a % 10);
-            int b = a % 10;
+        while (inputDigit != 0) {
+            sum += (inputDigit % 10);
+            int addDigit = inputDigit % 10;
             if (b % 2 == 1) {
-                sumOdd += b;
+                sumOdd += addDigit;
             }
-            if (b > max) {
-                max = b;
+            if (addDigit > max) {
+                max = addDigit;
             }
-            a /= 10;
+            inputDigit /= 10;
         }
         System.out.println("Сумма цифр числа = " + sum);
         System.out.println("Сумма нечетных цифр числа = " + sumOdd);
