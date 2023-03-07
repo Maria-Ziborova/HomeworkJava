@@ -10,7 +10,7 @@ public class MainPerson {
         Person person = new Person(name, middleName, familyName, age);
 
         System.out.println(familyName + " " + name + " " + middleName);
-        System.out.println("Год рождения - " + (Person.yearOfBirth((person.getAge()))));
+        System.out.println("Год рождения - " + (Person.getYearOfBirth((person.getAge()))));
 
         }
 }
