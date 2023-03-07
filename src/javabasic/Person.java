@@ -5,9 +5,9 @@ public class Person {
     private String middleName;
     private String familyName;
     private int age;
-public static int yearOfBirth (int x) {
+public static int getYearOfBirth (int personsAge) {
     Calendar cal = Calendar.getInstance();
-    return cal.get(Calendar.YEAR) - x;
+    return cal.get(Calendar.YEAR) - personsAge;
 }
     public Person(String name, String middleName, String familyName, int age) {
         this.name = name;
