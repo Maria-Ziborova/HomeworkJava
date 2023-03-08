@@ -1,5 +1,4 @@
 package javabasic;
-
 import java.util.Scanner;
 
 public class Average {
