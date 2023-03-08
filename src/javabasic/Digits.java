@@ -9,10 +9,10 @@ public class Digits {
         int sum = 0;
         int sumOdd = 0;
         int max = 0;
-        while (inputDigit != 0) {
-            sum += (inputDigit % 10);
-            int addDigit = inputDigit % 10;
-            if (b % 2 == 1) {
+        while (Math.abs(inputDigit) != 0) {
+            sum += (Math.abs(inputDigit) % 10);
+            int addDigit = Math.abs(inputDigit) % 10;
+            if (addDigit % 2 == 1) {
                 sumOdd += addDigit;
             }
             if (addDigit > max) {
