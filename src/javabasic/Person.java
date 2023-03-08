@@ -1,28 +1,33 @@
-package Homework;
+package javabasic;
+
 import java.util.Calendar;
+
 public class Person {
     private String name;
     private String middleName;
     private String familyName;
     private int age;
-public static int getYearOfBirth (int personsAge) {
-    Calendar cal = Calendar.getInstance();
-    return cal.get(Calendar.YEAR) - personsAge;
-}
+
+    public static int getYearOfBirth(int personsAge) {
+        Calendar cal = Calendar.getInstance();
+        return cal.get(Calendar.YEAR) - personsAge;
+    }
+
     public Person(String name, String middleName, String familyName, int age) {
         this.name = name;
         this.middleName = middleName;
         this.familyName = familyName;
         this.age = age;
-}
+    }
 
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
-        if (!(name.length() == 0))
-        {this.name = name;}
+        if (!(name.length() == 0)) {
+            this.name = name;
+        }
     }
 
     public String getMiddleName() {
@@ -30,8 +35,9 @@ public static int getYearOfBirth (int personsAge) {
     }
 
     public void setMiddleName(String middleName) {
-        if (!(middleName.length() == 0))
-        {this.middleName = middleName;}
+        if (!(middleName.length() == 0)) {
+            this.middleName = middleName;
+        }
     }
 
     public String getFamilyName() {
@@ -39,8 +45,9 @@ public static int getYearOfBirth (int personsAge) {
     }
 
     public void setFamilyName(String familyName) {
-        if (!(familyName.length() == 0))
-        {this.familyName = familyName;}
+        if (!(familyName.length() == 0)) {
+            this.familyName = familyName;
+        }
     }
 
     public int getAge() {

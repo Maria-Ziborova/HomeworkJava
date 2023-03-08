@@ -1,4 +1,4 @@
-package Homework;
+package javabasic;
 
 public class MainPerson {
     public static void main(String[] args) {
@@ -12,5 +12,5 @@ public class MainPerson {
         System.out.println(familyName + " " + name + " " + middleName);
         System.out.println("Год рождения - " + (Person.getYearOfBirth((person.getAge()))));
 
-        }
+    }
 }
