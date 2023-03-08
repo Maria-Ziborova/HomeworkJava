@@ -8,19 +8,18 @@ public class Average {
         int startRange = scanner.nextInt();
         System.out.print("Введите конец диапазона: ");
         int endRange = scanner.nextInt();
-        int i = startRange;
         int count = 0;
         int countEven = 0;
         int sum = 0;
         int sumEven = 0;
-        while (i <= endRange){
-            if (i % 2 == 0) {
-                sumEven += i;
+        while (startRange <= endRange){
+            if (startRange % 2 == 0) {
+                sumEven += startRange;
                 countEven += 1;
             }
-            sum += i;
+            sum += startRange;
             count += 1;
-            i++;
+            startRange++;
         }
         System.out.println("Среднее арифметическое = " + (double) sum / count);
         System.out.println("Среднее арифметическое четных = " + (double) sumEven / countEven);
