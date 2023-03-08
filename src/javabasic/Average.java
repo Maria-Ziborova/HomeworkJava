@@ -11,7 +11,7 @@ public class Average {
         int endRange = scanner.nextInt();
         int i = startRange;
         int count = 0;
-        int countEwen = 0;
+        int countEven = 0;
         int sum = 0;
         int sumEven = 0;
         while (i <= endRange){
