@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class Digits {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int inputDigit = scanner.nextInt();
+        int inputDigit = Math.abs(scanner.nextInt());
         int sum = 0;
         int sumOdd = 0;
         int max = 0;
-        while (Math.abs(inputDigit) != 0) {
-            sum += (Math.abs(inputDigit) % 10);
-            int addDigit = Math.abs(inputDigit) % 10;
+        while (inputDigit != 0) {
+            sum += (inputDigit % 10);
+            int addDigit = inputDigit % 10;
             if (addDigit % 2 == 1) {
                 sumOdd += addDigit;
             }
