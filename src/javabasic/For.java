@@ -2,10 +2,7 @@ package javabasic;
 
 public class For {
     public static boolean multipleFour(int x) {
-        if (x % 4 == 0) {
-            return true;
-        }
-        return false;
+        return (x % 4 == 0);
     }
     
     public static void main(String[] args) {
